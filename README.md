@@ -43,7 +43,7 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 <br/>
 <b>All Themes in GMX:</b>
 
-<br/>
+<br/><br/>
 <p>GMX Dark Theme:</p>
 <img alt="GMX Themes Dark" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-home.png" />
 
