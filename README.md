@@ -1,5 +1,5 @@
 <h1 align="center">
-  gmx
+  GM<span style='color: red;'>X</span>
 </h1>
 <br/>
 <div align="center">
