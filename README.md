@@ -34,11 +34,15 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 
 <br/>
 <p>GMX Settings Page (1):</p>
-<img alt="GMX Homepage" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-1.png" />
+<img alt="GMX Settings Page (1)" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-1.png" />
 
 <br/>
 <p>GMX Settings Page (2):</p>
-<img alt="GMX Homepage" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-2.png" />
+<img alt="GMX Settings Page (2)" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-2.png" />
+
+<br/>
+<p>GMX Example Query:</p>
+<img alt="GMX Example Query" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-query.png" />
 
 <br/>
 <h4>All Themes in GMX:</h4>
