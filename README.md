@@ -12,4 +12,4 @@
 </div>
 <hr>
 <br/>
-GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A metasearch engine.
+GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A Privacy respecting metasearch engine.
