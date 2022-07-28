@@ -12,7 +12,7 @@
 <br/>
 GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy respecting metasearch engine. GMX gives you results from Google, Qwant and popular torrent sites without spying on you. 
 <br/><br/>
-<h2>Features</h2>
+<h2>⭐ Features</h2>
 <ul>
     <li>No Ads & JavaScript</li>
     <li>Torrent results from popular torrent sites</li>
@@ -26,12 +26,12 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
     <li>Clean & Modern UI/UX</li>
 </ul>
 <br/>
-<h2>Things Broken/Not Working</h2>
+<h2>🚫 Things Broken/Not Working</h2>
 <ul>
     <li>Image Search Type</li>
 </ul>
 <br/>
-<h2>Screenshots</h2>
+<h2>🖼️ Screenshots</h2>
 <h4>* All screenshots you see below are in dark mode</h4>
 <br/>
 <p>GMX Homepage:</p>
