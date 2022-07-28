@@ -14,7 +14,7 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 
 <h2>Features</h2>
 <ul>
-    <li>Ad & JavaScript free</li>
+    <li>No Ad & JavaScript</li>
     <li>Torrent results from popular torrent sites</li>
     <li>Tracking snippets from URLs are removed</li>
     <li>Multiple Themes</li>
