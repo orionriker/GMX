@@ -28,6 +28,6 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 <br/>
 <h2>Screenshots</h2>
 <small>* All screenshots you see below are in dark mode</small>
-<br/>
+<br/><br/>
 <p>GMX Homepage:</p>
 <img alt="GMX Homepage" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-home.png" />
