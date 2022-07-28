@@ -1,0 +1,29 @@
+:root {
+    --main-bg: #3B4252 !important;
+    --main-fg: #E5E9F0 !important;
+
+    --secondary-bg: #444c5e !important;
+
+    --result-link-fg: #88C0D0 !important;
+    --result-fg: #D8DEE9 !important;
+
+    --button-bg: #4C566A !important;
+
+    --special-result-border: #5b667e !important;
+
+    --footer-fg: #D8DEE9 !important;
+    --footer-bg: #2E3440 !important;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #3B4252 !important;
+}
+::-webkit-scrollbar {
+	width: 10px !important;
+	background-color: #566179 !important;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px !important;
+	background-color: #566179 !important;
+    border: solid 2.2px #3B4252 !important;
+}

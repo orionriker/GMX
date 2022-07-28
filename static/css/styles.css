@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gmx-blue: rgb(26, 136, 247);
+    --gmx-shadow: .5rem 1rem rgba(0,0,0,.15);
+    --gmx-search-shadow: 0 1px 6px 0 #171717;
+}
+
+html,
+body {
+    color: var(--main-fg);
+    background-color: var(--main-bg);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+input,
+button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-size:18px;
+    color: var(--result-fg);
+}
+
+a,
+.text-result-wrapper a:hover {
+    text-decoration: none;
+}
+
+.text-result-wrapper a:visited h2,
+.special-result-container a,
+.sub-search-button-wrapper button {
+  transition: all .3s;
+  color: var(--main-fg);
+}
+.sub-search-button-wrapper button {
+    padding: 6px 11px 6px 11px;
+    border-radius: 10px;
+}
+.special-result-container a:hover {
+  color: var(--gmx-blue);
+}
+.sub-search-button-wrapper button:hover,
+.sub-search-button-wrapper .active {
+    background: var(--button-bg);
+}
+
+a:hover, .text-result-wrapper h2:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 210px;
+}
+
+.search-container h1 {
+    font-size: 70px;
+    
+}
+
+.search-container input,
+.sub-search-container input {
+    width: 500px;
+    color: inherit;
+    background-color: inherit;
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid #5f6368;
+    border-radius: 25px;
+}
+
+.search-container input:hover,
+.search-container input:focus {
+    box-shadow: var(--gmx-search-shadow) !important;
+    background: var(--button-bg) !important;
+}
+.sub-search-container input {
+    background: var(--button-bg) !important;
+}
+.sub-search-container input:hover,
+.sub-search-container input:focus {
+    box-shadow: var(--gmx-search-shadow) !important;
+}
+
+.search-button,
+.settings-button,
+.misc-container button,
+.misc-container select {
+    transition: none !important;
+    color: inherit !important;
+    background-color: var(--button-bg) !important;
+    font-size: 14px;
+    border: 1px solid var(--button-bg) !important;
+    border-radius: 6px !important;
+    padding: 10px 10px 10px 10px !important;
+}
+.settings-button {
+    margin: 0 !important;
+    color: var(--main-fg) !important;
+    padding: 5px 10px 5px 10px !important;
+}
+.search-button:hover,
+.settings-button:hover,
+.misc-container button:hover {
+    border: 1px solid #5f6368 !important;
+    cursor: pointer !important;
+}
+
+.sub-search-container {
+    margin: 2%;
+}
+
+.sub-search-container hr {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.sub-search-container input {
+    margin-bottom: 40px;
+    width: 600px;
+}
+
+.sub-search-container .logo {
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.sub-search-button-wrapper {
+    margin-left: 150px;
+}
+
+.sub-search-button-wrapper img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.sub-search-button-wrapper button {
+    border: none;
+    background-color: inherit;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.misc-container {
+    text-align: center;
+    word-wrap: break-word;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.misc-container div {
+    margin-bottom: 30px;
+}
+
+.misc-container button {
+    margin-right:10px;
+    margin-left:10px;
+}
+
+.misc-container a {
+    color:inherit;
+    text-decoration: underline;
+}
+
+.instances-container div {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.instances-container input {
+    color: inherit;
+    background-color: inherit;
+    padding: 5px;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid #5f6368;
+    border-radius: 5px;
+    float: right;
+}
+
+.text-result-container,
+#time,
+.next-page-button-wrapper {
+    margin-left: 200px;
+}
+
+.text-result-container {
+    margin-bottom: 100px;
+}
+
+.special-result-container {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid var(--special-result-border);
+    width: 500px;
+}
+
+.text-result-wrapper {
+    max-width: 500px;
+    word-wrap: break-word;
+    margin-top: 35px;
+}
+
+.text-result-wrapper a {
+    font-size: 14px;
+    color: var(--result-fg);
+}
+
+.text-result-wrapper h2 {
+    font-size: 20px;
+    color: var(--result-link-fg);
+    padding-top: 5px;
+    margin-top: 1px;
+}
+
+.special-result-container a {
+    display: flex;
+    margin-top: 10px;
+    font-size:14px;
+}
+
+.special-result-container img {
+    display: flex;
+    max-width: 60%;
+    max-height: 200px;
+    padding-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.next-page-button-wrapper {
+    margin-top:-50px;
+    margin-bottom:100px;
+}
+
+.next-page-button-wrapper button {
+    border:none;
+    background-color: inherit;
+    color: var(--result-link-fg);
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.next-page-button-wrapper .page {
+    display: inline;
+}
+
+.image-result-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding: 0;
+    margin-bottom:50px;
+}
+
+.image-result-container img {
+    border: 2px solid var(--button-bg);
+    margin: 10px;
+}
+
+.footer-container {
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: var(--footer-bg);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.footer-container a {
+    color: var(--footer-fg);
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all .3s;
+}
+.footer-container a:hover {
+    color: dodgerblue;
+}
+.settings-theme {
+    background: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 20px;
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.settings-theme-set {
+    padding: 10% 15%;
+    width: 70%;
+    padding: 15%;
+    border-radius: 4px;
+    margin: 5px 0;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.settings-theme-set [class^="set-theme__color-"] {
+    height: 10px;
+    margin: 4px 0;
+}
+.settings-theme-set [class^="set-theme__color-"] {
+    content: "";
+    height: 4px;
+    overflow: hidden;
+    margin: 2px 0;
+    border-radius: 4px;
+    width: 100%;
+}
+.settings-theme:hover {
+    border: var(--border);
+}
+
+.hide {
+    display: none;
+}
+
+.X {
+    color: var(--gmx-blue);
+}
+.seeders {
+    color: #50fa7b;
+}
+.leechers {
+    color: #ff79c6;
+}
+
+/* mobile view */
+@media only screen and (max-width: 900px) {
+    .search-container input {
+        width: 80%;
+    }
+
+    .search-button-wrapper button {
+        display: table-row;
+        margin: 30px 0px 0px 0px;
+        width: 80%;
+    }
+
+    .footer-container a {
+        margin:10px;
+    }
+
+    .sub-search-container {
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+    }
+
+    .sub-search-container .logo {
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+
+    }
+
+    .sub-search-container input {
+        width: 80%;
+        margin-top:30px;
+    }
+
+    .sub-search-button-wrapper {
+        margin:0;
+        padding:0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .sub-search-button-wrapper img {
+        margin:0;
+        padding:0;
+        margin-bottom:20px;
+    }
+
+    .sub-search-button-wrapper button {
+        margin-left:auto;
+        margin-right:auto;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .special-result-container {
+        max-width: 80%;
+    }
+
+    .special-result-container img {
+        max-width: 80%;
+    }
+
+    .misc-container {
+        margin-bottom: 200px;
+        width: 95%;
+    }
+
+    .search-container h1 {
+      font-size: 55px;
+    }
+
+    .search-container {
+        margin-top: 10%;
+    }
+
+    .text-result-container,
+    #time,
+    .next-page-button-wrapper {
+        margin-left: 40px;
+    }
+}
