@@ -4,7 +4,7 @@
 <br/>
 <div align="center">
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/gamemaster123356/gmx?style=flat-square">
+  <img alt="GitHub" src="https://img.shields.io/badge/LICENSE-gnu%20gpl%20v3-orange?style=for-the-badge&logo=github">
 
 </div>
 
