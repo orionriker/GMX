@@ -25,3 +25,5 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
     <li>Easy to setup</li>
     <li>Clean & Modern UI/UX</li>
 </ul>
+
+<h2>Screenshots</h2>
