@@ -28,7 +28,7 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 <br/>
 <h2>Things Broken/Not Working</h2>
 <ul>
-    <li>Image Search</li>
+    <li>Image Search Type</li>
 </ul>
 <br/>
 <h2>Screenshots</h2>
