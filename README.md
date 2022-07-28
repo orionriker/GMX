@@ -16,13 +16,11 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 <ul>
     <li>Ad & JavaScript free</li>
     <li>Torrent results from popular torrent sites</li>
-    <li>Special queries (e.g.: 1 btc to usd , what does xyz mean etc.)</li>
     <li>Tracking snippets from URLs are removed</li>
-    <li>Multiple color themes</li>
-    <li>Image results are converted to base64 to prevent clients from connecting to Google servers</li>
-    <li>Supports both POST and GET requests</li>
-    <li>Popular social media sites (YouTube, Instagram, Twitter) are replaced with privacy friendly front-ends</li>
-    <li>Easy to use JSON API for developers</li>
-    <li>No 3rd party libs are used</li>
+    <li>Multiple Themes</li>
+    <li>Image urls are converted to base64 to prevent clients from connecting to Google Servers</li>
+    <li>Popular social media sites (YouTube, Instagram, Twitter) can be replaced with privacy friendly front-ends</li>
+    <li>Easy to use JSON API for Developers</li>
+    <li>No 3rd party libraries are used</li>
     <li>Easy to setup</li>
 </ul>
