@@ -1,10 +1,13 @@
 <h1 align="center">
   gmx
 </h1>
+<br/>
 <div align="center">
-  [![GNU GPL v3][license-badge]][license-url]
+
+  <img alt="GitHub" src="https://img.shields.io/github/license/gamemaster123356/gmx?style=flat-square">
+
 </div>
-<hr><br>
+
 GMX, A metasearch engine.
 
 [license-badge]: https://img.shields.io/badge/LICENSE-gnu%20gpl%20v3-orange?style=for-the-badge&logo=github
