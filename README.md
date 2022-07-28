@@ -23,4 +23,5 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
     <li>Easy to use JSON API for Developers</li>
     <li>No 3rd party libraries are used</li>
     <li>Easy to setup</li>
+    <li>Clean & Modern UI/UX</li>
 </ul>
