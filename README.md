@@ -39,3 +39,26 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 <br/>
 <p>GMX Settings Page (2):</p>
 <img alt="GMX Homepage" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-2.png" />
+
+<br/>
+<p>All Themes in GMX:</p>
+
+<br/>
+<p>GMX Dark Theme:</p>
+<img alt="GMX Themes Dark" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-home.png" />
+
+<br/>
+<p>GMX Light Theme:</p>
+<img alt="GMX Themes Light" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-light.png" />
+
+<br/>
+<p>GMX Nord Theme:</p>
+<img alt="GMX Themes Nord" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-nord.png" />
+
+<br/>
+<p>GMX Night Owl Theme:</p>
+<img alt="GMX Themes Night Owl" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-night-owl.png" />
+
+<br/>
+<p>GMX Discord Theme:</p>
+<img alt="GMX Themes Discord" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-discord.png" />
