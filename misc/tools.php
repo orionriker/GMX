@@ -83,6 +83,30 @@
         }
     }
 
+    function get_safesearch() {
+        $config = require "config.php";
+
+        if($config->safesearch == true) {
+            if(isset($_REQUEST['safe'])) {
+                $safe = $_REQUEST['safe'];
+            } elseif(isset($_COOKIE['safesearch'])) {
+                $safe = $_COOKIE['safesearch'];
+            } else {
+                $safe = 'on';
+            }
+        } else {
+            if(isset($_REQUEST['safe'])) {
+                $safe = $_REQUEST['safe'];
+            } elseif(isset($_COOKIE['safesearch'])) {
+                $safe = $_COOKIE['safesearch'];
+            } else {
+                $safe = 'off';
+            }
+        }
+        
+        return $safe;
+    }
+
     function get_xpath($response) {
         if(!empty($response)) {
             $htmlDom = new DOMDocument;
@@ -118,8 +142,10 @@
     }
 
     function print_elapsed_time($start_time) {
+        global $results;
         $end_time = number_format(microtime(true) - $start_time, 2, '.', '');
-        echo "<p class=\"mb-5\" id=\"time\">Fetched results in $end_time seconds</p>";
+        $count = count($results) - 1;
+        echo "<p class=\"mb-5\" id=\"time\">Fetched $count results in $end_time seconds</p>";
     }
 
     function print_next_page_button($text, $page, $query, $type) {

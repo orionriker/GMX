@@ -2,8 +2,9 @@
     function get_video_results($query, $page=0)
     {
         global $config;
+        global $safe;
 
-        $url = "https://www.google.$config->google_domain/search?&q=$query&start=$page&hl=$config->google_language&tbm=vid";
+        $url = "https://www.google.$config->google_domain/search?&q=$query&start=$page&num=$config->search_results&safe=$safe&hl=$config->google_language&tbm=vid";
         $response = request($url);
         $xpath = get_xpath($response);
 

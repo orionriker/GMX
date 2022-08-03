@@ -1,0 +1,23 @@
+:root {
+    --main-bg: #ECEFF4 !important;
+    --main-fg: #202124 !important;
+
+    --secondary-bg: #e6eaf3 !important;
+
+    --special-result-border: #bdc1c6 !important;
+    --result-link-fg: #1a0dab !important;
+    --result-fg: #70757a !important;
+
+    --button-bg: #D8DEE9 !important;
+    --button-border-bg: #bbbec4 !important;
+
+    --tooltip-bg: #fff !important;
+    --tooltip-fg: #000 !important;
+
+    --footer-fg: #70757a !important;
+    --footer-bg: #D8DEE9 !important;
+
+    --scroll-bar-bg: #979ca1 !important;
+
+    --form-check-bg: #d2d4d8 !important;
+}

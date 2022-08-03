@@ -83,6 +83,7 @@
             $seeders = $result["seeders"];
             $leechers = $result["leechers"];
             $size = $result["size"];
+            $files = $result["files"];
 
             echo "<div class=\"text-result-wrapper\">";
             echo "<a href=\"$magnet\">";
@@ -91,6 +92,8 @@
             echo "</a>";
             echo "<span>SE: <span class=\"seeders\">$seeders</span> - ";
             echo "LE: <span class=\"leechers\">$leechers</span> - ";
+            if(!empty($files))
+            echo "FILS: <span>$files</span> - ";
             echo "$size</span>";
             echo "</div>";
         }

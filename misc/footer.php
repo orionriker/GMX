@@ -2,6 +2,9 @@
     <a href="/">GMX</a>
     <a href="https://github.com/gamemaster123356/gmx/">Source & Instance list</a>
     <a href="/api" target="_blank">API</a>
+    <?php if(str_contains($_SERVER['REQUEST_URI'], '/search')) { ?>
+    <a href="./settings">Settings</a>
+    <?php } ?>
 </div>
 </body>
 </html>

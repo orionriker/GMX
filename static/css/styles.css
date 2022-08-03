@@ -2,8 +2,22 @@
 
 :root {
     --gmx-blue: rgb(26, 136, 247);
-    --gmx-shadow: .5rem 1rem rgba(0,0,0,.15);
-    --gmx-search-shadow: 0 1px 6px 0 #171717;
+    --gmx-search-hover-shadow: 0 1px 6px 0 #171717;
+    --gmx-tooltip-shadow: 0px 0px 1.6px rgba(0, 0, 0, 0.006),
+    0px 0px 3.6px rgba(0, 0, 0, 0.015),
+    0px 0px 6.3px rgba(0, 0, 0, 0.026),
+    0px 0px 10px rgba(0, 0, 0, 0.041),
+    0px 0px 15.5px rgba(0, 0, 0, 0.059),
+    0px 0px 24.1px rgba(0, 0, 0, 0.082),
+    0px 0px 40px rgba(0, 0, 0, 0.112),
+    0px 0px 80px rgba(0, 0, 0, 0.15);
+    --gmx-shadow: 0px 0px 1.9px rgba(0, 0, 0, 0.012),
+    0px 0px 4.3px rgba(0, 0, 0, 0.025),
+    0px 0px 7.7px rgba(0, 0, 0, 0.04),
+    0px 0px 12.8px rgba(0, 0, 0, 0.057),
+    0px 0px 21.2px rgba(0, 0, 0, 0.078),
+    0px 0px 37px rgba(0, 0, 0, 0.108),
+    0px 0px 80px rgba(0, 0, 0, 0.17);
 }
 
 html,
@@ -79,7 +93,7 @@ a:hover, .text-result-wrapper h2:hover {
 
 .search-container input:hover,
 .search-container input:focus {
-    box-shadow: var(--gmx-search-shadow) !important;
+    box-shadow: var(--gmx-search-hover-shadow) !important;
     background: var(--button-bg) !important;
 }
 .sub-search-container input {
@@ -87,12 +101,12 @@ a:hover, .text-result-wrapper h2:hover {
 }
 .sub-search-container input:hover,
 .sub-search-container input:focus {
-    box-shadow: var(--gmx-search-shadow) !important;
+    box-shadow: var(--gmx-search-hover-shadow) !important;
 }
 
 .search-button,
 .settings-button,
-.misc-container button,
+.btn-gmx,
 .misc-container select {
     transition: none !important;
     color: inherit !important;
@@ -109,8 +123,8 @@ a:hover, .text-result-wrapper h2:hover {
 }
 .search-button:hover,
 .settings-button:hover,
-.misc-container button:hover {
-    border: 1px solid #5f6368 !important;
+.btn-gmx:hover {
+    border: 1px solid var(--button-border-bg) !important;
     cursor: pointer !important;
 }
 
@@ -155,10 +169,6 @@ a:hover, .text-result-wrapper h2:hover {
     width: 950px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.misc-container div {
-    margin-bottom: 30px;
 }
 
 .misc-container button {
@@ -338,6 +348,137 @@ a:hover, .text-result-wrapper h2:hover {
 }
 .leechers {
     color: #ff79c6;
+}
+
+.tooltip-wrapper + .tooltip-wrapper {
+    margin-top: 10px;
+}
+
+.tooltip-wrapper {
+    width: fit-content;
+}
+
+.tooltip-toggle {
+    position: relative;
+}
+
+.tooltip-toggle::after {
+    content: attr(data-tooltip-text);
+    white-space: nowrap;
+    background-color: var(--tooltip-bg);
+    border-radius: 5px;
+    color: var(--tooltip-fg);
+    position: absolute;
+    text-align: center;
+    z-index: 555;
+    opacity: 0;
+    transition: all cubic-bezier(0.17, 0.67, 0.5, 0.71) 100ms;
+    pointer-events: none;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 .555555555555556rem;
+    box-shadow: var(--gmx-tooltip-shadow);
+}
+
+.tooltip-toggle:hover::before, .tooltip-toggle:hover::after {
+    opacity: 1;
+}
+
+.tooltip-toggle.t-top::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+.tooltip-toggle.t-top::after {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tooltip-toggle.t-top:hover::before {
+    transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+}
+
+.tooltip-toggle.t-top:hover::after {
+    transform: translate(-50%, calc(-100% - 10px));
+}
+
+.tooltip-toggle.t-left::before {
+    top: 25%;
+    left: 0;
+    transform: translate(0, 0%) rotate(45deg);
+}
+
+.tooltip-toggle.t-left::after {
+    top: 0;
+    left: 0;
+}
+
+.tooltip-toggle.t-left:hover::before {
+    transform: translate(calc(-100% - 5px)) rotate(45deg);
+}
+
+.tooltip-toggle.t-left:hover::after {
+    transform: translate(calc(-100% - 10px));
+}
+
+.tooltip-toggle.t-right::before {
+    top: 25%;
+    right: 0;
+    transform: translate(0, 0%) rotate(45deg);
+}
+
+.tooltip-toggle.t-right::after {
+    top: 0;
+    right: 0;
+}
+
+.tooltip-toggle.t-right:hover::before {
+    transform: translate(calc(100% + 5px)) rotate(45deg);
+}
+
+.tooltip-toggle.t-right:hover::after {
+    transform: translate(calc(100% + 10px));
+}
+
+.tooltip-toggle.t-bottom::before {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+.tooltip-toggle.t-bottom::after {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tooltip-toggle.t-bottom:hover::before {
+    transform: translate(-50%, calc(100% + 5px)) rotate(45deg);
+}
+
+.tooltip-toggle.t-bottom:hover::after {
+    transform: translate(-50%, calc(100% + 10px));
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--main-bg);
+}
+::-webkit-scrollbar {
+	width: 10px !important;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px !important;
+	border-radius: 10px !important;
+	background-color: var(--scroll-bar-bg);
+    border: solid 2.2px var(--main-bg);
+}
+
+.form-check-input {
+    background-color: var(--form-check-bg);
+    border: none !important;
 }
 
 /* mobile view */

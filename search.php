@@ -1,4 +1,4 @@
-<?php session_name('GMX');session_start(); require "misc/header.php"; ?>
+<?php ob_start(); session_name('GMX');session_start(); require "misc/header.php"; ?>
 
 <title> <?php echo $_REQUEST["q"]; ?> - GMX</title>
 </head>
@@ -31,7 +31,6 @@
                 <button name="type" value="1"<?php if($_GET["type"] == 1)echo ' class="active"'; ?>><i class="fa-solid fa-image"></i> Images</button>
                 <button name="type" value="2"<?php if($_GET["type"] == 2)echo ' class="active"'; ?>><i class="fa-solid fa-eye"></i> Videos</button>
                 <button name="type" value="3"<?php if($_GET["type"] == 3)echo ' class="active"'; ?>><i class="fa-solid fa-archive"></i> Torrents</button>
-                <a href="./settings"><button type="button" class="settings-button"><i class="fa-solid fa-cog"></i></button></a>
             </div>
         <hr>
         </form>
@@ -40,8 +39,27 @@
             $config = require "config.php";
             require "misc/tools.php";
 
-            $page = isset($_REQUEST["p"]) ? (int) $_REQUEST["p"] : 0;
-        
+            $safe = get_safesearch();
+
+            if(!str_contains($_SERVER['REQUEST_URI'], 'safe=')) $safenotset = true;
+
+            $page = isset($_REQUEST["p"]) ? (int) $_REQUEST["p"] : $pagenotset = true;
+
+            if($pagenotset == true || $safenotset == true) {
+                if($pagenotset) {
+                    $newuri = $_SERVER['REQUEST_URI'].'&page=0';
+                }
+                if($safenotset) {
+                    if(isset($newuri)) {
+                        $newuri = $newuri.'?safe=on';
+                    } else
+                    $newuri = $_SERVER['REQUEST_URI']."&safe=$safe";
+                }
+                header("Location: $newuri");
+                ob_end_flush();
+                exit;
+            }
+
             $start_time = microtime(true);
             switch ($type)
             {

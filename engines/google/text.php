@@ -1,7 +1,7 @@
 <?php
      function check_for_special_search($query)
      {
-        if (isset($_COOKIE["disable_special"]) || isset($_REQUEST["disable_special"]))
+        if (isset($_COOKIE["dis_special_queries"]) && $_COOKIE["dis_special_queries"] == 'on')
             return 0;
 
          $query_lower = strtolower($query);
@@ -24,13 +24,14 @@
     function get_text_results($query, $page=0)
     {
         global $config;
+        global $safe;
 
         $mh = curl_multi_init();
         $query_lower = strtolower($query);
         $query_encoded = urlencode($query);
         $results = array();
 
-        $url = "https://www.google.$config->google_domain/search?&q=$query_encoded&start=$page&hl=$config->google_language";
+        $url = "https://www.google.$config->google_domain/search?&q=$query_encoded&start=$page&num=$config->search_results&safe=$safe&hl=$config->google_language";
         $google_ch = curl_init($url);
         curl_setopt_array($google_ch, $config->curl_settings);
         curl_multi_add_handle($mh, $google_ch);
@@ -147,7 +148,7 @@
                 echo "<img src=\"image_proxy?url=$image_url\">";
             }
             echo $response;
-            echo "<span><a href=\"$source\" target=\"_blank\">$source</a></span>";
+            echo "<span><a style=\"width: fit-content\" href=\"$source\" target=\"_blank\">$source</a></span>";
             echo "</p>";
 
             array_shift($results);

@@ -1,6 +1,7 @@
 <?php
 $serverres = http_response_code();
 require "misc/header.php";
+$config = require('config.php');
 ?>
         <title>GMX</title>
         </head>
@@ -50,13 +51,12 @@ require "misc/header.php";
                         <p><?php echo $errordes; ?></p>
                 </div>
         <?php } else { ?>
-                <div class="p-2"><a class="float-end" href="./settings"><button class="settings-button"><i class="fa-solid fa-cog"></i></button></a></div>
+                <div class="p-2"><a class="float-start" style="color: var(--footer-fg); text-decoration: none; transition: all .3s;" onmouseout="this.style.color='var(--footer-fg)';" onmouseover="this.style.color='var(--gmx-blue)';" href="https://github.com/gamemaster123356/GMX/releases/tag/<?php echo $config->gmx_version; ?>"><?php echo $config->gmx_version; ?></a><a class="float-end" href="./settings"><button class="settings-button"><i class="fa-solid fa-md fa-cog"></i></button></a></div>
                 <div class="clearfix"></div>
                 <form class="search-container" action="search" method="get" autocomplete="off">
                         <h1 class="mb-0">GM<span class="X">X</span></h1>
                         <input type="text" class="mt-3" name="q"/>
                         <input type="hidden" name="p" value="0"/>
-                        <input type="hidden" name="type" value="0"/>
                         <input type="submit" class="hide"/><br>
                         <button class="search-button mt-4" name="type" value="0" type="submit">GMX Search</button>
                         <button class="search-button mt-4" name="type" value="3" type="submit">Search Torrents</button>
