@@ -31,6 +31,8 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
     <li>Image Search Type</li>
 </ul>
 <br/>
+<b>after installing GMX be sure to rename the htaccess.rem file to .htaccess</b>
+<br/>
 <h2>🖼️ Screenshots</h2>
 <h4>* All screenshots you see below are in dark mode</h4>
 <br/>
