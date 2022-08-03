@@ -10,7 +10,8 @@
 </div>
 <hr>
 <br/>
-GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy respecting metasearch engine. GMX gives you results from Google, Qwant and popular torrent sites without spying on you. 
+GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy respecting metasearch engine. GMX gives you results from Google, Qwant and popular torrent sites without spying on you.
+<b>After downloading GMX be sure to rename the htaccess.rem file to .htaccess</b>
 <br/><br/>
 <h2>⭐ Features</h2>
 <ul>
@@ -30,8 +31,6 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
 <ul>
     <li>Image Search Type</li>
 </ul>
-<br/>
-<b>after installing GMX be sure to rename the htaccess.rem file to .htaccess</b>
 <br/>
 <h2>🖼️ Screenshots</h2>
 <h4>* All screenshots you see below are in dark mode</h4>
