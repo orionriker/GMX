@@ -1,0 +1,27 @@
+ErrorDocument 400 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php
+ErrorDocument 501 /index.php
+ErrorDocument 502 /index.php
+ErrorDocument 504 /index.php
+ErrorDocument 505 /index.php
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+RewriteRule .* - [L,R=404]
+
+RewriteCond %{REQUEST_URI} ^/engines
+RewriteRule ^(.+)$ /engines$1 [QSA,L,R=404]
+
+RewriteCond %{REQUEST_URI} ^/misc
+RewriteRule ^(.+)$ /misc$1 [QSA,L,R=404]
+
+RewriteCond %{REQUEST_URI} ^/config.php
+RewriteRule ^(.+)$ /config.php [QSA,L,R=404]
+
+RewriteCond %{REQUEST_URI} ^/.htaccess
+RewriteRule ^(.+)$ /.htaccess [QSA,L,R=404]
