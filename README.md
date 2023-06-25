@@ -1,6 +1,4 @@
-<h1 align="center">
-  GM<span color='blue'>X</span>
-</h1>
+![GMX-ReadME-Banner](https://github.com/gamemaster123356/GMX/blob/github-assets/GMX-ReadME-Banner.png?raw=true)
 <br/>
 <div align="center">
   <img alt="GitHub release (release name instead of tag name)" src="https://img.shields.io/github/v/release/gamemaster123356/gmx?color=dodgerblue&include_prereleases&label=latest&style=for-the-badge">
