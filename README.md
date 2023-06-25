@@ -14,7 +14,7 @@ GMX is a remarkable privacy-oriented metasearch engine, which is a fork of the <
 <b>After downloading GMX be sure to rename the htaccess.rem file to .htaccess(if you downloaded it from the source)</b>
 <br><br>
 
-<h2>⭐ Features</h2>
+## ⭐ Features
 - No Ads & JavaScript
 - Torrent results from popular torrent sites
 - Tracking snippets from URLs are removed
