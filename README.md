@@ -15,56 +15,58 @@ GMX is a remarkable privacy-oriented metasearch engine, which is a fork of the <
 <br><br>
 
 ## ⭐ Features
-- No Ads & JavaScript
-- Torrent results from popular torrent sites
-- Tracking snippets from URLs are removed
-- Multiple Themes
-- Custom Themes Support
-- Image urls are converted to base64 to prevent clients from connecting to Google Servers
-- Popular social media sites (YouTube, Instagram, Twitter) can be replaced with privacy friendly front-ends
-- Easy to use JSON API for Developers
-- No 3rd party libraries are used
-- Easy to setup
-- Clean & Modern UI/UX
+GMX offers a range of exceptional features that prioritize your privacy and enhance your search experience:
+- **Ad-Free & JavaScript-Free**: Say goodbye to intrusive ads and excessive JavaScript. GMX ensures a clutter-free search experience, allowing you to focus on the information you seek without distractions.
+- **Torrent Results from Reliable Sources**: Gain access to an extensive collection of torrent results sourced from popular and reputable torrent sites. GMX simplifies the process of finding the content you desire.
+- **Elimination of Tracking Snippets**: GMX goes the extra mile to safeguard your privacy by removing tracking snippets from URLs. Rest assured that your search activities remain confidential and protected.
+- **Diverse Theme Selection**: Customize your search environment with multiple themes to suit your personal preferences. Choose from a range of visually appealing options to create a search experience that reflects your style.
+- **Support for Custom Themes**: Take personalization to the next level with GMX's support for custom themes. Tailor your search engine's appearance to align with your unique taste and create a more personalized browsing experience.
+- **Base64 Image URL Conversion**: GMX prioritizes your privacy by converting image URLs to base64 format. This prevents unnecessary connections to external servers, ensuring a heightened level of privacy protection.
+- **Privacy-Friendly Front-Ends for Social Media**: Replace popular social media platforms like YouTube, Instagram, and Twitter with privacy-friendly front-ends. Stay connected while maintaining control over your personal data.
+- **Developer-Friendly JSON API**: GMX offers an easy-to-use JSON API, empowering developers to integrate and build upon the search engine's capabilities effortlessly. Unlock the potential of GMX and create innovative search experiences.
+- **Independent Development**: GMX is built from scratch, with no reliance on third-party libraries. This ensures a lightweight and efficient search engine that prioritizes performance and security.
+- **Seamless Setup Process**: GMX prides itself on its user-friendly setup process. With clear instructions and minimal configuration requirements, you can start using GMX quickly and effortlessly.
+- **Clean & Modern UI/UX**: GMX offers a visually pleasing and intuitive user interface, providing a modern and seamless search experience. Enjoy a clutter-free interface that emphasizes usability and simplicity.
 <br>
 
-<h2>🖼️ Screenshots</h2>
-<h4>* All screenshots you see below are in dark mode</h4>
-<br/>
-<p>GMX Homepage:</p>
+## 🖼️ Screenshots
+#### * All screenshots you see below are in dark mode
+<br>
+
+GMX Homepage:
 <img alt="GMX Homepage" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-home.png" />
+<br>
 
-<br/>
-<p>GMX Settings Page (1):</p>
+GMX Settings Page (1):
 <img alt="GMX Settings Page (1)" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-1.png" />
+<br>
 
-<br/>
-<p>GMX Settings Page (2):</p>
+GMX Settings Page (2):
 <img alt="GMX Settings Page (2)" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-settings-2.png" />
+<br>
 
-<br/>
-<p>GMX Example Query:</p>
+GMX Example Query:
 <img alt="GMX Example Query" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-query.png" />
+<br>
 
-<br/>
-<h4>All Themes in GMX:</h4>
+#### All Themes in GMX:
+<br>
 
-<br/>
-<p>GMX Dark Theme:</p>
+GMX Dark Theme:
 <img alt="GMX Themes Dark" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-home.png" />
+<br>
 
-<br/>
-<p>GMX Light Theme:</p>
+GMX Light Theme:
 <img alt="GMX Themes Light" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-light.png" />
+<br>
 
-<br/>
-<p>GMX Nord Theme:</p>
+GMX Nord Theme:
 <img alt="GMX Themes Nord" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-nord.png" />
+<br>
 
-<br/>
-<p>GMX Night Owl Theme:</p>
+GMX Night Owl Theme:
 <img alt="GMX Themes Night Owl" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-night-owl.png" />
+<br>
 
-<br/>
-<p>GMX Discord Theme:</p>
+GMX Discord Theme:
 <img alt="GMX Themes Discord" src="https://github.com/gamemaster123356/GMX/blob/github-assets/gmx-theme-discord.png" />
