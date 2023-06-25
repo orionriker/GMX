@@ -28,11 +28,6 @@ GMX(A fork of <a href="https://github.com/hnhx/librex">LibreX</a>), A privacy re
     <li>Clean & Modern UI/UX</li>
 </ul>
 <br/>
-<h2>🚫 Things Broken/Not Working</h2>
-<ul>
-    <li>Image Search Type</li>
-</ul>
-<br/>
 <h2>🖼️ Screenshots</h2>
 <h4>* All screenshots you see below are in dark mode</h4>
 <br/>
